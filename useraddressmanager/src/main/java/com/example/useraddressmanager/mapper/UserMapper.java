@@ -22,8 +22,8 @@ public class UserMapper {
 
     public static AddressDTO toDTO(Address address) {
         return new AddressDTO(
-                address.getStreet1(),
-                address.getStreet2(),
+                address.getStreetOne(),
+                address.getStreetTwo(),
                 address.getCity(),
                 address.getState(),
                 address.getCountry(),
@@ -43,8 +43,8 @@ public class UserMapper {
 
     public static Address toEntity(AddressDTO dto, User user) {
         Address address = new Address();
-        address.setStreet1(dto.getStreet1());
-        address.setStreet2(dto.getStreet2());
+        address.setStreetOne(dto.getStreetOne());
+        address.setStreetTwo(dto.getStreetTwo());
         address.setCity(dto.getCity());
         address.setState(dto.getState());
         address.setCountry(dto.getCountry());

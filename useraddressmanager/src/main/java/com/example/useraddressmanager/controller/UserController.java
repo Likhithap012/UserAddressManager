@@ -42,4 +42,3 @@ public class UserController {
         return ResponseEntity.ok("Deleted user with ID: " + id);
     }
 }
-
